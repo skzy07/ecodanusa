@@ -130,4 +130,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const href = link.getAttribute('href')?.split('/').pop() || '';
     if (href === currentPath) link.classList.add('active');
   });
+  /* ── i18n ────────────────────────────────────────────────── */
+  if (typeof EcoI18n !== 'undefined') EcoI18n.init();
 });
